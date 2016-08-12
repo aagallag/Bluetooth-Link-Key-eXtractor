@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LKX: Bluetooth Link-Key eXtractor</string>
+    <string name="author_name">Aaron Gallagher</string>
+    <string name="author_email">aaron.b.gallagher@gmail.com</string>
+    <string name="github_url">http://github.com/todoproject</string>
+    <string name="issues_url">http://github.com/issues_orsomething</string>
+    <string name="license">GNU GPLv3</string>
+</resources>
