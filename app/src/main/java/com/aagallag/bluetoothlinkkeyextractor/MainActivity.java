@@ -23,6 +23,8 @@ import java.io.IOException;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -71,11 +73,15 @@ public class MainActivity extends Activity {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
-                // TODO Auto-generated method stub
-
                 final String selected = (String) expListAdapter.getChild(
                         groupPosition, childPosition);
-                Toast.makeText(getBaseContext(), selected, Toast.LENGTH_LONG)
+
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("BtDeviceRecord", selected);
+                clipboard.setPrimaryClip(clip);
+
+                final String toastMsg = "Copied to clipboard: " + selected;
+                Toast.makeText(getBaseContext(), toastMsg, Toast.LENGTH_LONG)
                         .show();
 
                 return true;
