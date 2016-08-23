@@ -2,10 +2,11 @@
 
 This is a free, open-source project. I hacked this app up in an evening, so there is likely to be bugs. If you encounter any issues, I would appreciate if you would file an issue at the link below and mention what device you encountered the bug on. Feature requests are welcome too!
 
+## How to install
+Download the app from the [Play Store](https://play.google.com/store/apps/details?id=com.aagallag.bluetoothlinkkeyextractor) or the [GitHub repo](https://github.com/aagallag/Bluetooth-Link-Key-eXtractor/releases/tag/v1.0).
+
 ## How to compile
-```
 Simply import the project into Android Studio.
-```
 
 ## Issues:
 https://github.com/aagallag/Bluetooth-Link-Key-eXtractor/issues
